@@ -26,4 +26,3 @@ export { default as BondsIcon } from "./Bonds";
 export { default as VaultsIcon } from "./Vaults";
 export { default as EggHouseIcon } from "./EggHouse";
 export { default as KiwiIcon } from "./Kiwi";
-export { default as JuiceIcon } from "./Juice";
