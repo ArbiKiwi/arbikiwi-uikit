@@ -17,7 +17,7 @@ const StyleButton = styled(Text).attrs({ role: "button" })`
 const Tooltip = styled.div<{ isTooltipDisplayed: boolean }>`
   display: ${({ isTooltipDisplayed }) => (isTooltipDisplayed ? "block" : "none")};
   position: absolute;
-  bottom: -22px;
+  bottom: -14px;
   right: 0;
   left: 0;
   text-align: center;

@@ -33,7 +33,7 @@ const ModalHeader = styled.div`
   align-items: center;
   border-bottom: 1px solid #e9eaeb;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 16px;
 `;
 
 const ModalTitle = styled(Flex)`
@@ -47,7 +47,7 @@ const Modal: React.FC<Props> = ({
   onBack,
   children,
   hideCloseButton = false,
-  bodyPadding = "24px",
+  bodyPadding = "16px",
 }) => (
   <StyledModal>
     <ModalHeader>

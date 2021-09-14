@@ -5,7 +5,7 @@ import { RadioProps, scales } from "./types";
 const getScale = ({ scale }: RadioProps) => {
   switch (scale) {
     case scales.SM:
-      return "24px";
+      return "16px";
     case scales.MD:
     default:
       return "32px";

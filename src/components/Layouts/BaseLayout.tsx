@@ -6,11 +6,11 @@ const GridLayout = styled.div`
   grid-gap: 16px;
   ${({ theme }) => theme.mediaQueries.sm} {
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 24px;
+    grid-gap: 16px;
   }
   ${({ theme }) => theme.mediaQueries.md} {
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 24px;
+    grid-gap: 16px;
   }
   ${({ theme }) => theme.mediaQueries.lg} {
     grid-template-columns: repeat(12, 1fr);
