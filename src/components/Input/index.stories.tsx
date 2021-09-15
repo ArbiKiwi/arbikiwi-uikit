@@ -11,7 +11,7 @@ const Row = styled.div`
   margin-bottom: 32px;
 
   & > input + input {
-    margin-left: 16px;
+    margin-left: 15px;
   }
 `;
 
@@ -26,7 +26,7 @@ export const Default: React.FC = () => {
     <div>
       {Object.keys(scales).map((key) => (
         <>
-          <Heading mb="16px">{key}</Heading>
+          <Heading mb="15px">{key}</Heading>
           <Row>
             <Input type="text" scale={scales[key]} value="Value" />
             <Input type="text" scale={scales[key]} placeholder="Placeholder..." />

@@ -51,7 +51,7 @@ const SocialEntry = styled.div`
   align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: 0 16px;
+  padding: 0 15px;
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -80,7 +80,7 @@ const PanelFooter: React.FC<Props> = ({
       <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="16px" mr="8px" />
+            <PancakeRoundIcon width="15px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
@@ -89,7 +89,7 @@ const PanelFooter: React.FC<Props> = ({
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
-            const iconProps = { width: "16px", color: "textSubtle", style: { cursor: "pointer" } };
+            const iconProps = { width: "15px", color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "8px" : 0;
             if (social.items) {
               return (
@@ -114,17 +114,17 @@ const PanelFooter: React.FC<Props> = ({
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>
           {/* alignItems center is a Safari fix */}
           <Flex alignItems="center">
-            <SunIcon color={isDark ? "textDisabled" : "text"} width="16px" />
+            <SunIcon color={isDark ? "textDisabled" : "text"} width="15px" />
             <Text color="textDisabled" mx="4px">
               /
             </Text>
-            <MoonIcon color={isDark ? "text" : "textDisabled"} width="16px" />
+            <MoonIcon color={isDark ? "text" : "textDisabled"} width="15px" />
           </Flex>
         </Button>
         <Dropdown
           position="top-right"
           target={
-            <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="16px" />}>
+            <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="15px" />}>
               <Text color="textSubtle">{currentLang?.toUpperCase()}</Text>
             </Button>
           }

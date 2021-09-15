@@ -19,8 +19,8 @@ const Separator = styled.div`
   }
 
   ${({ theme }) => theme.mediaQueries.md} {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
 
@@ -49,7 +49,7 @@ const insertSeparators = (items: ReactNode[], separator: BreadcrumbsProps["separ
     ];
   }, []);
 
-const DefaultSeparator = <ChevronRightIcon color="currentColor" width="16px" />;
+const DefaultSeparator = <ChevronRightIcon color="currentColor" width="15px" />;
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ separator = DefaultSeparator, children }) => {
   const validItems = Children.toArray(children).filter((child) => isValidElement(child));

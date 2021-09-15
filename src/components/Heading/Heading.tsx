@@ -7,7 +7,7 @@ const style = {
     fontSize: "20px",
   },
   [sizes.LG]: {
-    fontSize: "16px",
+    fontSize: "15px",
   },
   [sizes.XL]: {
     fontSize: "40px",

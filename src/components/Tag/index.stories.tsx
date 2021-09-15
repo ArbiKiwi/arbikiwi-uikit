@@ -11,7 +11,7 @@ const Row = styled.div`
   margin-bottom: 32px;
 
   & > div {
-    margin-right: 16px;
+    margin-right: 15px;
   }
 `;
 
